@@ -114,7 +114,6 @@ public class DeliveryController {
         }
     }
 
-
     @GetMapping("/status/{status}")
     public ResponseEntity<List<Delivery>> getDeliveriesByStatus(
             @Parameter(description = "Status to filter deliveries by") @PathVariable String status) {
